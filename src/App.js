@@ -37,11 +37,15 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <div class="mainContainer">
-      <div class="loaderContainer">
-          <div class="loaderInner"></div>
+      <div style={{"overflow": "hidden"}}>
+        <div class="mainContainer">
+          <div class="loaderContainer">
+              <div class="loaderInner"></div>
+          </div>
+        </div>
+
+        Groww
       </div>
-    </div>
     );
   }
 
