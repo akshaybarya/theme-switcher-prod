@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react'
 import { toggleTheme } from './helpers';
 
-import { axios } from 'axios';
+import axios from 'axios';
 
 import './App.css';
 
