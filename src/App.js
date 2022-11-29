@@ -16,7 +16,7 @@ const App = () => {
 
   const getTheme = async () => {
     try {
-      const res = await axios.get('https://theme-switcher-server.vercel.app');
+      const res = await axios.get('https://theme-switcher-server.vercel.app/2');
       
       if (res.data) {
         toggleTheme(res.data?.['--primaryClr'], res.data?.['--secondaryClr'], res.data?.['--primaryBg']);
