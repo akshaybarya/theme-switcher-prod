@@ -9,12 +9,14 @@ const App = () => {
   const [primaryClr, setPrimaryClr] = useState(null);
   const [secondaryClr, setSecondaryClr] = useState(null);
   const [bgClr, setBgClr] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const onClick = () => {
     toggleTheme(primaryClr, secondaryClr, bgClr);
   };
 
   const getTheme = async () => {
+    setIsLoading(true);
     try {
       const res = await axios.get('https://theme-switcher-server.vercel.app/2');
       
@@ -24,12 +26,24 @@ const App = () => {
       
     } catch (error) {
       console.error(error);
+    } finally {
+      setIsLoading(false);
     }
   }
 
   useLayoutEffect(() => {
     getTheme();
   }, []);
+
+  if (isLoading) {
+    return (
+      <div class="mainContainer">
+      <div class="loaderContainer">
+          <div class="loaderInner"></div>
+      </div>
+    </div>
+    );
+  }
 
   return (
     <div style={{height:'100vh', width: '100%', display: 'flex', alignItems: 'start', justifyContent: 'center', paddingTop: '50px', backgroundColor: 'whitesmoke'}}>

@@ -79,3 +79,42 @@ html[data-theme="dark"] {
   cursor: pointer;
 }
 
+.mainContainer {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loaderContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.loaderInner {
+  border-radius: 100px;
+  border: 2px #00d09c5e solid;
+  height: 50px;
+  width: 50px;
+}
+
+.loaderInner {
+  border-top-color: var(--primaryClr);
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
