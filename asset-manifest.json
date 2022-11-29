@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/theme-switcher-prod/static/css/main.e1bad15f.css",
-    "main.js": "/theme-switcher-prod/static/js/main.ecca5bd8.js",
+    "main.js": "/theme-switcher-prod/static/js/main.edfa8d19.js",
     "index.html": "/theme-switcher-prod/index.html",
     "main.e1bad15f.css.map": "/theme-switcher-prod/static/css/main.e1bad15f.css.map",
-    "main.ecca5bd8.js.map": "/theme-switcher-prod/static/js/main.ecca5bd8.js.map"
+    "main.edfa8d19.js.map": "/theme-switcher-prod/static/js/main.edfa8d19.js.map"
   },
   "entrypoints": [
     "static/css/main.e1bad15f.css",
-    "static/js/main.ecca5bd8.js"
+    "static/js/main.edfa8d19.js"
   ]
 }
